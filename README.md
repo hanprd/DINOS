@@ -1,6 +1,8 @@
-# Unified Audio Representation Learning Framework
+# DINOS (Diverse INdustrial Operation Sounds) - Unified Audio Representation Datasets, Benchmarks, and Development Framework
 
-A unified training and evaluation framework for audio representation models, supporting pretraining, fine-tuning, and downstream evaluation across multiple architectures.
+DINOS (Diverse INdustrial Operation Sounds, [DINOS Dataset on Kaggle](https://www.kaggle.com/datasets/changheonhan/dinos-diverse-industrial-operation-sounds)) covers diverse manufacturing processes, materials, and operating conditions, allowing for the representation of industrial acoustic features. It includes recordings from CNC cutting and Additive Manufacturing (AM) operations, as well as designed anomaly scenarios. For cutting, data were collected from two CNC machines: a Haas VF-2 and a Yornew VMC-300. Recordings from the VF-2 include inactivity, machining, and warm-up sounds. The VMC-300 machines aluminum (Al-6060) under varying feed rates and spindle speeds to induce chatter—a self-excited vibration that degrades surface finish and tool life by exciting the system’s natural frequencies. Additional metal processing sounds were collected from an unannotated APEC SK2540 CNC machine. For AM processes, the dataset includes recordings from Renishaw’s LPBF and FormAlloy’s DED systems, capturing both idle and operational states. The acoustic signal reflects events such as fan activation, axis motion, and laser operation. Cold spray data were collected using a stethoscope sensor mounted on the powder feeder and a microphone placed in an open area. This setup enabled the detection of anomalies such as gas flow loss, powder clogging, and depletion. Finally, a microphone installed on a multi-machine shop floor captured ambient industrial noise, including machine operations, fan rotation, and high-pressure air.
+
+This repo introduces a unified training and evaluation framework for audio representation models, supporting pretraining, fine-tuning, and downstream evaluation across multiple architectures.
 
 ## Supported Models
 
@@ -168,3 +170,4 @@ After evaluation, results are saved to `[Model]_Results/` directories:
 - accelerate, huggingface-hub, safetensors
 - kagglehub, opensmile, resampy, laion_clap
 - plotly, dash, dash-bootstrap-components
+
