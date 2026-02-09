@@ -4,7 +4,7 @@ set -euo pipefail
 DATASET="changheonhan/dinos-diverse-industrial-operation-sounds"
 
 FILES=(
-    "DINOS.zip"
+    "DINOS.7z"
 )
 
 for f in "${FILES[@]}"; do
