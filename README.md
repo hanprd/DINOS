@@ -56,7 +56,7 @@ uv pip install pip setuptools wheel
 uv pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu129
 uv pip install numpy pandas matplotlib scikit-learn tqdm timm
 uv pip install tensorboard pyyaml umap-learn soundfile librosa seaborn accelerate huggingface-hub safetensors
-uv pip install kagglehub
+uv pip install kaggle kagglehub
 uv pip install opensmile resampy laion_clap
 uv pip install plotly dash dash-bootstrap-components
 ```
@@ -170,4 +170,5 @@ After evaluation, results are saved to `[Model]_Results/` directories:
 - accelerate, huggingface-hub, safetensors
 - kagglehub, opensmile, resampy, laion_clap
 - plotly, dash, dash-bootstrap-components
+
 
